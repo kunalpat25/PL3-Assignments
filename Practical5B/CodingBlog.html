@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Fundamentals</title>
+  </head>
+  <body>
+    <header>
+      <h1>Write a program in any language to find the sum of the series 1 +11 + 111
+      + 1111 + ... n terms.</h1>
+    </header>
+    <hr />
+    <nav>
+        <a href="SportsBlog.html">Sports Blog</a>|
+		<a href="#">Coding Blog</a>|
+		<a href="QuotesBlog.html">Quotes Blog</a>
+    </nav>
+    <section>
+      <h2>Code</h2>
+      <code>
+        class GFG<br> 
+        {
+             // Function for finding summation<br>
+              static int summation(int n)<br> 
+              {<br> 
+                int sum = 0, j = 1; <br>
+                for (int i = 1; i <= n; i++) <br>
+                {<br> 
+                    sum = sum + j; <br>
+                    j= (j * 10) + 1; <br>
+                }<br>
+                 return sum; <br>
+                }<br>
+                 // Driver Code <br>
+                 public static void main(String args[]) <br>
+                 {<br>
+                      int n = 5; <br>
+                      System.out.println(summation(n));<br>
+                     }<br>
+        }
+      </code>
+    </section>
+    <hr />
+    <section>
+      <h2>Sample Input</h2>
+      <p>
+        5<br />
+      </p>
+    </section>
+    <hr />
+    <section>
+       
+      <h2>Sample Output</h2>
+      <samp><h4>12345</h4></samp>
+    </section>
+    <hr />
+    <section>
+      <h2>Variables used in the program</h2>
+      <var>i,sum,j,n </var>
+    </section>
+    <hr />
+    <section>
+      <h2>Complexity</h2>
+      <small>The complexitiy of above program is: O(n)</small>
+    </section>
+    <hr />
+    <p>For <strong>Algorithm</strong> click on following links:</p>
+    <a
+      href="https://www.geeksforgeeks.org/find-sum-series-1111111111-upto-n-terms/"
+      >Geeks For Geeks</a
+    ><br />
+    <a
+      href="https://www.w3resource.com/c-programming-exercises/for-loop/c-for-loop-exercises-26.php"
+      >W3 resources</a
+    ><br />
+    <hr />
+    <footer>
+      <p>Developed by Kunal Patrikar 2019BTECS00207</p>
+    </footer>
+  </body>
+</html>
