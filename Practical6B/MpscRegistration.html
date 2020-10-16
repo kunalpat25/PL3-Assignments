@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPSC Registration Form</title>
+    <script>
+        function submit()
+        {
+            window.alert("Form submitted successfully!");
+        }
+        function reset()
+        {
+            
+        }
+    </script>
+  </head>
+  <body>
+    <header>
+      <center><h1>MPSC Exam Registration form</h1></center>
+    </header>
+    <hr />
+    <form action="#" method="post" autocomplete="on">
+      
+    <fieldset>
+        <legend><h2>Student information</h2></legend>
+      
+        <center>
+        <table>
+          <tr>
+            <td>First Name</td>
+            <td>
+              <input
+                required
+                type="text"
+                name="fname"
+                placeholder="John"
+                id="fname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Middle Name</td>
+            <td>
+              <input type="text" name="mname" placeholder="Alex" id="mname" />
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td>
+              <input type="text" name="lname" placeholder="Doe" id="lname" />
+            </td>
+          </tr>
+          <tr>
+            <td>Parent's Name</td>
+            <td>
+              <input
+                required
+                type="text"
+                name="pname"
+                placeholder="Peter Martin"
+                id="pname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Mobile No</td>
+            <td>
+              <input
+                required
+                type="text"
+                name="mobno"
+                placeholder="9922744388"
+                id="mobno"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email ID</td>
+            <td>
+              <input
+                required
+                type="text"
+                name="email"
+                placeholder="username@company.domain"
+                id="email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>ID Proof</td>
+            <td>
+              <select required name="idproof" id="idproof">
+                <option value="aadhar" selected>Aadhar card</option>
+                <option value="passport">Passport</option>
+                <option value="license">Driving License</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>
+              <textarea
+                required
+                name="address"
+                id="address"
+                cols="25"
+                rows="5"
+                placeholder="Street 1, Building, City, State Zip Country"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </fieldset>
+
+    <fieldset>
+        <legend><h2>Educational Information</h2></legend>
+      <center>
+        
+        <table>
+          <tr>
+            <td>Qualification</td>
+            <td>
+              <select
+                name="qualification"
+                id="qualification"
+                multiple
+                size="5"
+                required
+              >
+                <option value="ssc">SSC</option>
+                <option value="hsc" selected>HSC</option>
+                <option value="bsc">BSc.</option>
+                <option value="msc">Msc.</option>
+                <option value="btech">BTech/BE</option>
+                <option value="mtech">MTech/ME</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="bba">BBA</option>
+                <option value="mba">MBA</option>
+                <option value="LLB">LLB</option>
+                <option value="LLM">LLM</option>
+                <option value="diploma">Diploma Engineering</option>
+                <option value="mbbs">MBBS</option>
+                <option value="phd">PHD</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Branch</td>
+            <td>
+              <select name="branch" id="branch" multiple size="3" required>
+                <option value="computer">Computer Science</option>
+                <option value="electronics">Elecronics</option>
+                <option value="electrical">Electrical</option>
+                <option value="mechanical">Mechanical</option>
+                <option value="civil">Civil</option>
+                <option value="gynocology">Gynocology</option>
+                <option value="neurology">Neurology</option>
+                <option value="physics">Physics</option>
+                <option value="biology">Biology</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="maths">Mathematics</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>College</td>
+            <td>
+              <input list="colleges" name="college" id="college" />
+              <datalist id="colleges">
+                <option value="Walchand College of Engineering"></option>
+                <option value="coep"></option>
+                <option value="vjti"></option>
+                <option value="vit"></option>
+                <option value="pccoe"></option>
+                <option value="aissms"></option>
+                <option value="Cummins College"></option>
+                <option value="Sinhagad College of Engineering"></option>
+                <option value="Shivaji Shikshan Sanstha"></option>
+                <option value="Ram Meghe Institute"></option>
+                <option value="aiims"></option>
+                <option value="pdmc"></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>University</td>
+            <td>
+              <input list="universities" name="university" id="university" />
+              <datalist id="universities">
+                <option value="Sant Gadge Baba University"></option>
+                <option value="Ch. Shivaji University"></option>
+                <option value="Sant Tukdoji Maharaj University"></option>
+                <option value="YCMOU"></option>
+                <option value="IGNOU"></option>
+                <option value="Dr. Panjabrao Deshmukh Vidyapeeth"></option>
+                <option value="Savitribai Phule University"></option>
+                <option value="Gokhale Institute"></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>Exam Seat No.</td>
+            <td><input type="text" name="seatno" id="seatno" /></td>
+          </tr>
+        </table>
+      </center>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Exam Preferences</h2></legend>
+      <center>
+        
+        <table>
+          <tr>
+            <td>MPSC Exam Paper Branch</td>
+            <td>
+              <select name="mpsc_branch" id="mpsc_branch" required>
+                <option value="sti">STI</option>
+                <option value="psi">PSI</option>
+                <option value="clerk">Clerk Typist</option>
+                <option value="astc">Asistant State Tax Commissioner</option>
+                <option value="project_officer">Project Officer</option>
+                <option value="education_officer">
+                  Deputy Education Officer
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Exam Cities Preferences</td>
+            <td>
+              <select name="city_preference" id="city_preference">
+                <optgroup label="Maharashtra">
+                  <option value="amravati">Amravati</option>
+                  <option value="nagpur">Nagpur</option>
+                  <option value="wardha">Wardha</option>
+                  <option value="pune">Pune</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="sangli">Sangli</option>
+                  <option value="akola">Akola</option>
+                </optgroup>
+                <optgroup label="Uttar Pradesh">
+                  <option value="lucknow">Lucknow</option>
+                  <option value="kanpur">Kanpur</option>
+                  <option value="agra">Agra</option>
+                  <option value="noida">Noida</option>
+                </optgroup>
+                <optgroup label="Madhya Pradesh">
+                  <option value="bhopal">Bhopal</option>
+                  <option value="indore">Indore</option>
+                  <option value="ujjain">Ujjain</option>
+                </optgroup>
+                <optgroup label="Tamil Nadu">
+                  <option value="chennai">Chennai</option>
+                  <option value="madurai">Madurai</option>
+                  <option value="vellore">Vellore</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </center>
+      <br><br><br>
+    <center>
+        <button onclick="submit()">Submit</button>
+        <button type="reset" onclick="reset()">Reset</button>
+        
+    </center>
+    </fieldset>
+    
+</form>
+  </body>
+</html>
