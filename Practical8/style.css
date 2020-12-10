@@ -1,0 +1,47 @@
+body{
+    padding: 20px;
+    padding-top: 0px;
+    padding-left: 80px;
+    background-color: rgb(189, 187, 187);
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: chocolate;
+}
+h2{
+    color: rgb(0,139,139);
+}
+h3{
+    color: #be9157;
+}
+h4{
+    color: darkorchid;
+}
+#first{
+    text-align: center;
+}
+p{
+    font-size: large;
+    margin: 10px;
+}
+small{
+    font-style: italic;
+    font-size: medium;
+}
+article{
+    border-bottom: #be9157;
+    border-width: 3px;
+    border-style: groove;
+    padding: 20px;
+}
+article p{
+    text-align: justify;
+}
+
+.coding{
+    font-family: Consolas,"courier new";
+  color: crimson;
+  padding: 2px;
+  font-size: 105%;
+    
+}
